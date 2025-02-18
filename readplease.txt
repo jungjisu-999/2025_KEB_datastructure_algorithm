@@ -1,0 +1,15 @@
+파일을 클론을 할 때
+git clone 주소 .
+주소 뒤에 스페이스바 띄고 점을 찍어야 현재 파일에 그대로 가져옴
+점안찍으면 안에 폴더를 새로 만들고 집어넣음
+주소 뒤에 스페이스바 두번찍으면 상위 폴더에 만들어짐
+
+클론하고 원격 저장소 연결 바꾸는건 알것이고
+
+원격과의 연결상태 보려면
+git config --list 쳐서
+
+remote.origin.url=https://github.com/jungjisu-999/2025_KEB_datastructure_algorithm.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+이렇게 원격 url 떠있는지를 봐야댐
+
