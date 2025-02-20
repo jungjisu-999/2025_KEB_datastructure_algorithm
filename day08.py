@@ -41,6 +41,15 @@ if __name__ == "__main__":
                 print(f"{find_group}이(가) 존재하지 않습니다")
                 break
             current = current.right
+
+
+
+
+
+
+
+
+
 def dfs(g, i, visited):
     visited[i] = 1
     print(visited)
@@ -55,6 +64,7 @@ graph = [
     [1, 0, 1, 0, 0],
     [0, 0, 1, 0, 0]
 ]
+
 visited = [0] * len(graph)
 dfs(graph, 4, visited)
 """
