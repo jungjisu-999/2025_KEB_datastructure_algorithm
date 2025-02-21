@@ -3,6 +3,7 @@ def bubble_sort(l):
         for j in range(len(l) - 1):
             if l[j] > l[j+1]:
                 l[j], l[j + 1] = l[j+1], l[j]
-    return 1
+    return l
+
 
 print(bubble_sort([8, -11, 9, 1]))
