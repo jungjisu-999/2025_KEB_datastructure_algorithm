@@ -1,8 +1,12 @@
+# 18108
+# 불기 연도 = 서기 연도 + 544년
+#서기 연도 = 불기 연도 - 544
 
-# A,B = map(int, input().split())
-# print(A+B)
+y = int(input())
+print(y - 543)
 
-name = input()
-print(name + "??!")
+
+
+
 
 
