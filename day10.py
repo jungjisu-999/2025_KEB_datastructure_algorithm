@@ -41,15 +41,32 @@ def quick_sort(l):
     n = len(l)
     if n<=1: return l
     pivot = l[n//2]
-    left, right = list(), list()
+    left, mid, right = list(), list(), list()
 
     for i in l:
         if i < pivot:
             left.append(i)
         elif i > pivot:
             right.append(i)
+        else:
+            mid.append(i)
 
-    return quick_sort(left)+[pivot]+quick_sort(right)
+    return quick_sort(left)+mid+quick_sort(right)
+
+
+# lists = [4, 55, 55, 7, 55, 9, 11]
+# print(quick_sort(lists))
+
+lists1 = [random.randint(1, 100000) for _ in range(10000)]
+lists2 = lists1.copy()
+lists3 = lists1.copy()
+bubble_sort(lists1)
+insertion_sort(lists2)
+
+s = time.time()
+quick_sort(lists3)
+e = time.time()
+print(f'실행시간 : {e - s}초')
 
 
 lists1 = [random.randint(1, 100000) for _ in range(10000)]
