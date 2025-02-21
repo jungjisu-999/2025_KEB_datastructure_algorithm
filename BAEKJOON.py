@@ -1,6 +1,8 @@
-#알람 시계
-# if 조건:
-#       실행할_코드
 
+# A,B = map(int, input().split())
+# print(A+B)
+
+name = input()
+print(name + "??!")
 
 
