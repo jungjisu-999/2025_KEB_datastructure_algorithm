@@ -1,13 +1,16 @@
-# 스네이크 버드
-#n = 과일 갯수, m = 스네이크 버드 길이
-n,m = map(int, input().split())
+#11399 atm
+#2217 로프
 
-num_list = list(map(int, input().split()))
-num_list.sort()
 
-for i in num_list:
-    if i <= m :
-        m += 1
 
-print(m)
+X = int(input()) #26000
+N = int(input()) # 4
+total = 0
+for i in range(N):
+    h,m = map(int, input().split())
+    total += h*m
+if total == X:
+    print("Yes")
+else:
+    print("No")
 
