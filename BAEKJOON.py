@@ -1,56 +1,13 @@
+# 스네이크 버드
+#n = 과일 갯수, m = 스네이크 버드 길이
+n,m = map(int, input().split())
 
-#백준 num = 10951
-# A, B = map(int, input().split())
-# while 0 < A and B < 10:
-#     print(A+B)
-#     A, B = map(int, input().split())
+num_list = list(map(int, input().split()))
+num_list.sort()
 
-while True:
-    try:
-        A, B = map(int, input().split())
-        print(A + B)
-    except EOFError:
-        break
+for i in num_list:
+    if i <= m :
+        m += 1
 
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(m)
 
